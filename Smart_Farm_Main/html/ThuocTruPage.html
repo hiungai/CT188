@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/total.css">
+    <link rel="stylesheet" href="../assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="../assets/bootstrap-5.3.2-dist/js//bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../assets/fontawesome-free-6.4.2-web/css/all.css">
+    <script src="../csdl/csdl.js"></script>
+    <script src="../js/cart.js" defer></script>
+    <script src="../js/favorite.js" defer></script>
+    <link rel="icon" href="../asset/img/logo_smart_farm.png">
+    <title>Smart Farm | Nông dược</title>
+</head>
+<body>
+<!-- phần Header, bao gồm thanh điều hướng, nút đăng ký, đăng nhập, nút tìm kiếm, nút vào giỏ hàng và nút vào các sản phẩm yêu thích -->
+<header>
+  <div class="home"><a href="#"><i class="fa-solid fa-circle-chevron-up"></i></a></div>
+  <div class="header-container">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="../asset/img/logo_smart_farm.png" alt="Logo" style="width:65px;"
+            class="d-inline-block align-text-top">
+        </a>
+        <a class="navbar-brand" href="index.html">Trang Chủ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Sản Phẩm
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="GiongCayPage.html">Giống Cây Trồng</a></li>
+                <li><a class="dropdown-item" href="ThuocTruPage.html">Nông Dược</a></li>
+                <li><a class="dropdown-item" href="PhanBonPage.html">Phân Bón</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dịch Vụ
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="sale_policy.html">Chính Sách Bán Hàng</a></li>
+                <li><a class="dropdown-item" href="ship.html">Chính Sách Giao Hàng</a></li>
+                <li><a class="dropdown-item" href="return_Policy.html">Chính Sách Đổi Trả</a></li>
+                <li><a class="dropdown-item" href="warrantly.html">Chính Sách Bảo Hành</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search" action="search-page.html" onsubmit="return sc_get()">
+            <input id="sc"class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+            <button id="search" class="btn btn-outline-success" type="submit"><i
+                class="fa-solid fa-magnifying-glass"></i></button>
+            <a id="themebutton" class="btn btn-outline-success" role="button" href="login.html"><i
+                class="fa-solid fa-user"></i></a>
+            <a id="themebutton" class="btn btn-outline-success" role="button" href="cart_page.html"><i
+                class="fa-solid fa-cart-shopping"></i></a>
+            <a id="themebutton" class="btn btn-outline-success" role="button" href="favorite-page.html"><i
+                class="fa-solid fa-heart"></i></a>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+      <main>
+        <img src="../asset/img/background/3_Dich_vu_nong_nghiep.png" alt="Phòng khách" style="width: 100%; height: 20%; object-fit: cover; " >
+<!--Phần sản phẩm: sử dụng các thẻ div có class là "card" được hỗ trợ bởi boostrap5 để hiển thị từng sản phẩm
+dùng class "item " để hiển thị các sản phẩm thống nhất với nhau-->
+<!--Thẻ s để tạo một nội dung bị gạch ngang, dùng để hiển thị phần giá của sản phẩm trc khi được giảm giá-->
+<!--class "card title", "name-item-font", "card-text", "name-item-font", "btn bnt primary" được hỗ trợ bởi bootstrap5-->
+<!--class "fa fa-star" là icon ngôi sao được thư viện fontawesome cung cấp-->
+<!--Class "btn btn-primary" dùng để tạo nút thêm vào giỏ hàng do Bootstrap cung cấp-->
+<!--Bàn SOfa-Ghế Sofa-->
+      <div class="item" style="padding-top: 20px; padding-bottom: 20px;">
+          <h2><strong>Thuốc trừ Bệnh</strong></h2>
+          <div class="card " style="width: 18rem;margin-top: 20px;">
+            <img src="../asset/img/Nông Dược/Thuốc Trừ Bệnh PARAMAX 400SC.png" class="card-img-top" alt="Thuốc Trừ Bệnh PARAMAX 400SC">
+            <div class="card-body">
+              <h5 class="card-title">Thuốc Trừ Bệnh PARAMAX 400SC</h5> 
+              <p class="card-text"><b>200.000 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 400.000 VNĐ</s><br>
+                <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(5) <i style="float: right; font-size: 15px;">Đã bán 20</i></p>
+              <a href="#" class="btn btn-primary" onclick="addCart('sp0023')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('sp0023')"><i class="fa-regular fa-heart fa-lg"></i></a>
+            </div>
+          </div>
+          <div class="card " style="width: 18rem;margin-top: 20px;">
+            <img src="../asset/img/Nông Dược/Thuốc Trừ Bệnh TOTAN 200WP.png" class="card-img-top" alt="Thuốc Trừ Bệnh TOTAN 200WP">
+            <div class="card-body">
+              <h5 class="card-title">Thuốc Trừ Bệnh TOTAN 200WP</h5> 
+              <p class="card-text"><b>290.200 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 500.000 VNĐ</s><br>
+                <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(5) <i style="float: right; font-size: 15px;">Đã bán 20</i></p>
+              <a href="#" class="btn btn-primary" onclick="addCart('sp0024')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('sp0024')"><i class="fa-regular fa-heart fa-lg"></i></a>
+            </div>
+          </div>
+          <div class="card " style="width: 18rem;margin-top: 20px;">
+            <img src="../asset/img/Nông Dược/Thuốc Trừ Bệnh Đạo Ôn ANGATE 75WP.png" class="card-img-top" alt="Thuốc Trừ Bệnh Đạo Ôn ANGATE 75WP">
+            <div class="card-body">
+              <h5 class="card-title">Thuốc Trừ Bệnh Đạo Ôn ANGATE 75WP</h5> 
+              <p class="card-text"><b>160.000 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 500.000 VNĐ</s><br>
+                <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(5) <i style="float: right; font-size: 15px;">Đã bán 20</i></p>
+              <a href="#" class="btn btn-primary" onclick="addCart('sp0025')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('sp0025')"><i class="fa-regular fa-heart fa-lg"></i></a>
+            </div>
+          </div>
+          <div class="card " style="width: 18rem;margin-top: 20px;">
+            <img src="../asset/img/Nông Dược/Thuốc Trừ Bệnh Đạo Ôn FUAN 40EC.png" class="card-img-top" alt="Thuốc Trừ Bệnh Đạo Ôn FUAN 40EC">
+            <div class="card-body">
+              <h5 class="card-title">Thuốc Trừ Bệnh Đạo Ôn FUAN 40EC</h5> 
+              <p class="card-text"><b>270.200 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 500.000 VNĐ</s><br>
+                <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(5) <i style="float: right; font-size: 15px;">Đã bán 20</i></p>
+              <a href="#" class="btn btn-primary" onclick="addCart('sp0026')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('sp0026')"><i class="fa-regular fa-heart fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="padding-top: 20px; padding-bottom: 20px;">
+          <div class="card " style="width: 18rem;margin-top: 20px;">
+            <img src="../asset/img/Nông Dược/Thuốc Trừ BệnhSCOOTER 300EC.png" class="card-img-top" alt="Thuốc Trừ BệnhSCOOTER 300EC">
+            <div class="card-body">
+              <h5 class="card-title">Thuốc Trừ BệnhSCOOTER 300EC</h5> 
+              <p class="card-text"><b>260.200 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 500.000 VNĐ</s><br>
+                <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(5) <i style="float: right; font-size: 15px;">Đã bán 20</i></p>
+              <a href="#" class="btn btn-primary" onclick="addCart('sp0027')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('sp0027')"><i class="fa-regular fa-heart fa-lg"></i></a>
+            </div>
+          </div>
+         </div>
+        <!--Thuốc trừ cỏ -->
+        <div class="item" style="padding-top: 20px; padding-bottom: 20px;">
+          <h2><strong>Thuốc trừ cỏ</strong></h2>
+          <div class="card " style="width: 18rem;margin-top: 20px;">
+            <img src="../asset/img/Nông Dược/Thuốc Trừ Có Không Chọn Lọc GLUFOCA 200SL.png" class="card-img-top" alt="Thuốc Trừ Có Không Chọn Lọc GLUFOCA 200SL">
+            <div class="card-body">
+              <h5 class="card-title">Thuốc Trừ Có Không Chọn Lọc GLUFOCA 200SL</h5> 
+              <p class="card-text"><b>400.200 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 600.000 VNĐ</s><br>
+                <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(5) <i style="float: right; font-size: 15px;">Đã bán 20</i></p>
+              <a href="#" class="btn btn-primary" onclick="addCart('sp0028')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('sp0028')"><i class="fa-regular fa-heart fa-lg"></i></a>
+            </div>
+          </div>
+          <div class="card " style="width: 18rem;margin-top: 20px;">
+            <img src="../asset/img/Nông Dược/Thuốc Trừ Cỏ Hậu Nảy Mầm ANKILL A 40WP.png" class="card-img-top" alt="Thuốc Trừ Cỏ Hậu Nảy Mầm ANKILL A 40WP">
+            <div class="card-body">
+              <h5 class="card-title">Thuốc Trừ Cỏ Hậu Nảy Mầm ANKILL A 40WP</h5> 
+              <p class="card-text"><b>400.200 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 700.000 VNĐ</s><br>
+                <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(5) <i style="float: right; font-size: 15px;">Đã bán 20</i></p>
+              <a href="#" class="btn btn-primary" onclick="addCart('sp0029')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('sp0029')"><i class="fa-regular fa-heart fa-lg"></i></a>
+            </div>
+          </div>
+          <div class="card " style="width: 18rem;margin-top: 20px;">
+            <img src="../asset/img/Nông Dược/Thuốc Trừ Cỏ Hậu Nảy Mầm XEVELO 120EC.png" class="card-img-top" alt="Thuốc Trừ Cỏ Hậu Nảy Mầm XEVELO 120EC">
+            <div class="card-body">
+              <h5 class="card-title">Thuốc Trừ Cỏ Hậu Nảy Mầm XEVELO 120EC</h5> 
+              <p class="card-text"><b>150.000 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 500.000 VNĐ</s><br>
+                <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(5) <i style="float: right; font-size: 15px;">Đã bán 20</i></p>
+              <a href="#" class="btn btn-primary" onclick="addCart('sp0030')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('sp0030')"><i class="fa-regular fa-heart fa-lg"></i></a>
+            </div>
+          </div>
+          <div class="card " style="width: 18rem;margin-top: 20px;">
+            <img src="../asset/img/Nông Dược/Thuốc Trừ Cỏ Tiền Nảy Mầm MECO 60EC.png" class="card-img-top" alt="Thuốc Trừ Cỏ Tiền Nảy Mầm MECO">
+            <div class="card-body">
+              <h5 class="card-title">Thuốc Trừ Cỏ Tiền Nảy Mầm MECO</h5> 
+              <p class="card-text"><b>65.000 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 14.500.000 VNĐ</s><br>
+                <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(5) <i style="float: right; font-size: 15px;">Đã bán 20</i></p>
+              <a href="#" class="btn btn-primary" onclick="addCart('sp0031')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('sp0031')"><i class="fa-regular fa-heart fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="padding-top: 20px; padding-bottom: 20px;">
+          <div class="card " style="width: 18rem;margin-top: 20px;">
+            <img src="../asset/img/Nông Dược/Thuốc Trừ Cỏ Tiền Nảy Mầm WEEDER 300EC.png" class="card-img-top" alt="Thuốc Trừ Cỏ Tiền Nảy Mầm WEEDER 300EC">
+            <div class="card-body">
+              <h5 class="card-title">Thuốc Trừ Cỏ Tiền Nảy Mầm WEEDER 300EC</h5> 
+              <p class="card-text"><b>55.000 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 500.000 VNĐ</s><br>
+                <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(5) <i style="float: right; font-size: 15px;">Đã bán 20</i></p>
+              <a href="#" class="btn btn-primary" onclick="addCart('sp0032')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('sp0032')"><i class="fa-regular fa-heart fa-lg"></i></a>
+            </div>
+          </div>
+          <div class="card " style="width: 18rem;margin-top: 20px;">
+            <img src="../asset/img/Nông Dược/Thuốc Trừ Cỏ Trên Cây Trồng Cạn RAINVEL 480SL.png" class="card-img-top" alt="Thuốc Trừ Cỏ Trên Cây Trồng Cạn RAINVEL 480SL">
+            <div class="card-body">
+              <h5 class="card-title">Thuốc Trừ Cỏ Trên Cây Trồng Cạn RAINVEL 480SL</h5> 
+              <p class="card-text"><b>65.000 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 500.000 VNĐ</s><br>
+                <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(5) <i style="float: right; font-size: 15px;">Đã bán 20</i></p>
+              <a href="#" class="btn btn-primary" onclick="addCart('sp0033')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('sp0033')"><i class="fa-regular fa-heart fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+        <!--Thuốc trừ các loại động vật gây hại-->
+        <div class="item" style="padding-top: 20px; padding-bottom: 20px;">
+          <h2><strong>Thuốc trừ các loại động vật gây hại</strong></h2>
+          <div class="card " style="width: 18rem;margin-top: 20px;">
+            <img src="../asset/img/Nông Dược/Thuốc Trừ Chuột RACUMIN 0.75 TP.png" class="card-img-top" alt="Thuốc Trừ Chuột RACUMIN 0.75 TP">
+            <div class="card-body">
+              <h5 class="card-title">Thuốc Trừ Chuột RACUMIN 0.75 TP</h5> 
+              <p class="card-text"><b>9,290,200 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 14.500.000 VNĐ</s><br>
+                <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(5) <i style="float: right; font-size: 15px;">Đã bán 20</i></p>
+              <a href="#" class="btn btn-primary" onclick="addCart('sp0001')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('sp0001')"><i class="fa-regular fa-heart fa-lg"></i></a>
+            </div>
+          </div>
+          <div class="card " style="width: 18rem;margin-top: 20px;">
+            <img src="../asset/img/Nông Dược/Thuốc Trừ Sâu AKKA 3.6EC.png" class="card-img-top" alt="Thuốc Trừ Sâu AKKA 3.6EC">
+            <div class="card-body">
+              <h5 class="card-title">Thuốc Trừ Sâu AKKA 3.6EC</h5> 
+              <p class="card-text"><b>9,290,200 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 14.500.000 VNĐ</s><br>
+                <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(5) <i style="float: right; font-size: 15px;">Đã bán 20</i></p>
+              <a href="#" class="btn btn-primary" onclick="addCart('sp0001')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('sp0001')"><i class="fa-regular fa-heart fa-lg"></i></a>
+            </div>
+          </div>
+          <div class="card " style="width: 18rem;margin-top: 20px;">
+            <img src="../asset/img/Nông Dược/Thuốc Trừ Sâu Bạch Hổ 150SC.png" class="card-img-top" alt="Thuốc Trừ Sâu Bạch Hổ 150SC">
+            <div class="card-body">
+              <h5 class="card-title">Thuốc Trừ Sâu Bạch Hổ 150SC</h5> 
+              <p class="card-text"><b>9,290,200 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 14.500.000 VNĐ</s><br>
+                <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(5) <i style="float: right; font-size: 15px;">Đã bán 20</i></p>
+              <a href="#" class="btn btn-primary" onclick="addCart('sp0001')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('sp0001')"><i class="fa-regular fa-heart fa-lg"></i></a>
+            </div>
+          </div>
+          <div class="card " style="width: 18rem;margin-top: 20px;">
+            <img src="../asset/img/Nông Dược/Thuốc Trừ ỐC BƯƠU VÀNG ANHEAD 12GR.png" class="card-img-top" alt="Thuốc Trừ ỐC BƯƠU VÀNG ANHEAD 12GR">
+            <div class="card-body">
+              <h5 class="card-title">Thuốc Trừ ỐC BƯƠU VÀNG ANHEAD 12GR</h5> 
+              <p class="card-text"><b>9,290,200 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 14.500.000 VNĐ</s><br>
+                <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(5) <i style="float: right; font-size: 15px;">Đã bán 20</i></p>
+              <a href="#" class="btn btn-primary" onclick="addCart('sp0001')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('sp0001')"><i class="fa-regular fa-heart fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="padding-top: 20px; padding-bottom: 20px;">
+          <div class="card " style="width: 18rem;margin-top: 20px;">
+            <img src="../asset/img/Nông Dược/Thuốc Trừ ỐC BƯƠU VÀNG ANPUMA 700WP.png" class="card-img-top" alt="Thuốc Trừ ỐC BƯƠU VÀNG ANPUMA 700WP">
+            <div class="card-body">
+              <h5 class="card-title">Thuốc Trừ ỐC BƯƠU VÀNG ANPUMA 700WP</h5> 
+              <p class="card-text"><b>9,290,200 VNĐ</b> <s style="color:#ef683a; font-size: 15px;"> 14.500.000 VNĐ</s><br>
+                <i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star orange" ></i><i class="fa fa-star " ></i>(5) <i style="float: right; font-size: 15px;">Đã bán 20</i></p>
+              <a href="#" class="btn btn-primary" onclick="addCart('sp0001')"><i class="fa-solid fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+              <a class="float-end btn" role="button" style="color: red;" onclick="addFavorite('sp0001')"><i class="fa-regular fa-heart fa-lg"></i></a>
+            </div>
+          </div>
+            <!--icon có chức năng nhắn tin với cửa hàng-->
+<!--chức năng của các hàm Javascript được mô tả trong file total.js-->
+        <div class="chat-icon" onclick="toggleChat()">
+          <i class="fas fa-comment"></i>
+      </div>
+      <div class="chat-box" style="border-radius: 16px;">
+          <div class="chat-header">
+              <h2>Chat với Smart Farm</h2>
+              <span class="close-button" onclick="toggleChat()">&times;</span>
+          </div>
+          <div class="chat-content" id="chat-content">
+              <!-- Tin nhắn sẽ được hiển thị ở đây -->
+          </div>
+          <div class="chat-input">
+              <input type="text" id="message-input" placeholder="Nhập tin nhắn..." style="border-radius: 16px;">
+              <button style="margin: 2px;" onclick="sendMessage()">Gửi</button>
+          </div>
+          <script src="../js/total.js"></script>
+      </div>
+      </main>
+      <footer id="footer", style="display: flex; flex-wrap: wrap;">
+          <div class="container ">
+            <div class="row">
+              <!--Giới thiệu về Geral-->
+              <div class="col-sm">
+                <h4>Nông Phẩm Smart Farm</h4>
+                <p class="detail">Smart Farm tuy chỉ là một thương hiệu nông phẩm mới phát triển thời gian gần đây nhưng cam
+                  kết sẽ luôn mang đến cho khách hàng những trải nghiệm mua hàng tuyệt vời nhất.</p>
+              </div>
+              <!--Chính sách-->
+              <div class="col-sm">
+                <h4>Dịch Vụ</h4>
+                <ul class="unorderlist">
+                  <li><a href="../html/sale_policy.html" title="Chính Sách Bán Hàng">Chính Sách Bán Hàng</a></li>
+                  <li><a href="../html/ship.html" title="Chính Sách Giao Hàng & Lắp Đặt">Chính Sách Giao Hàng</a></li>
+                  <li><a href="../html/return_Policy.html" title="Chính Sách Bảo Hành - Đổi Trả">Chính Sách Bảo Hành - Đổi
+                      Trả</a>
+                  </li>
+                  <li><a href="#" title="Câu Hỏi Thường Gặp">Câu Hỏi Thường Gặp</a></li>
+                </ul>
+              </div>
+              <!--THông tin liên hệ-->
+              <!--Các class "fa-solid fa-location-dot", "fa fa-phone", "fa fa-phone", "fa fa-envelope"
+        là các icon được cung cấp bởi thư viện Fontawesome-->
+              <div class="col-sm">
+                <h4>Thông tin liên hệ</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Trường Đại Học Cần Thơ - Đường 3/2, Phường Xuân Khánh, Quận Ninh
+                  Kiều, Thành Phố Cần Thơ.</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i> 0123456789 (Hotline)</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i> 0122333444455555 (Đội Giao Hàng)</p>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i> cskh@SmartFarm.com</p>
+                <div class="social">
+                  <!--các icon mạng xã hội-->
+                  <a href="#" class="facebook" title="Facebook"><img class="facebook"
+                      src="../asset/img/social_media/facebook.png" alt=""></a>
+                  <a href="#" class="instagram" title="Instagram"><img src="../asset/img/social_media/ingstargam.webp"
+                      alt=""></a>
+                  <a href="#" class="tiktok" title="Tiktok"><img src="../asset/img/social_media/tiktok.webp" alt=""></a>
+                  <a href="#" class="youtube" title="Youtube"><img class="youtbe" src="../asset/img/social_media/youtube.webp"
+                      alt=""></a>
+                </div>
+              </div>
+              <!--Các icon thanh toán-->
+              <div class="col-sm">
+                <h4 class="atm-content">Thanh toán miễn phí</h4>
+                <div class="atm">
+                  <img src="../asset/img/paymentLogo/ATM_logo.png" alt="">
+                  <img src="../asset/img/paymentLogo/logo-jcb.png" alt="">
+                  <img src="../asset/img/paymentLogo/logo-master.png" alt="">
+                  <img src="../asset/img/paymentLogo/logo-samsungpay.png" alt="">
+                  <img src="../asset/img/paymentLogo/logo-visa.png" alt="">
+                  <img src="../asset/img/paymentLogo/logo-vnpay.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+      </footer>
+</body>
+</html>

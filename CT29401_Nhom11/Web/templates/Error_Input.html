@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Error!!
+        </title>
+    </head>
+    <body>
+     <h1> Error in send data </h1>
+     <h2>Lỗi trong việc gửi dữ liệu. Gửi dữ liệu đúng theo biểu mẫu có sẵn </h2>
+     <div>
+            Các giá trị không hợp lệ hoặc không được nhập vào trong biểu mẫu được thiết lặp là "Invalid":<br>
+            <ol>
+                <li type="1"> Class: {{class_}}</li>
+                <li type="1"> Largest_spot_size: {{larget_spot}}</li>
+                <li type="1"> Spot_distribution: {{distri}}</li>
+                <li type="1"> Activity: {{acti}}</li>
+                <li type="1"> Evolution: {{evol}}</li>
+                <li type="1"> Previous_24_hour_flare_activity: {{pre_24}}</li>
+                <li type="1"> Historically_complex: {{his}}</li>
+                <li type="1"> Did_region: {{did}}</li>
+                <li type="1"> Area: {{area}}</li>
+                <li type="1"> Area_largest_spot: {{area_spot}}</li>
+            </ol>    
+    </div>
+     <h3><a href="{{url_for('input_data')}}">Quay lại trang input</a></h3>
+     <h3><a href="{{url_for('Home_page')}}">Quay lại trang chủ</a> </h3>
+     <h3><a href="https://www.sidc.be/educational/classification.php" target="_blank">Get more Information</a></h3>
+    
+    </body>
+</html>
